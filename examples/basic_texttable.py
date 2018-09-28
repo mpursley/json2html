@@ -5,7 +5,7 @@ sys.path.append(lib_path)
 
 from json2html import *
 
-_texttable = """
+_texttable_example1 = """
  _________________________________________________
 | name        | name test                         |
 | desription  | converts json 2 text table format |
@@ -14,7 +14,7 @@ _texttable = """
  -------------------------------------------------
 """
 
-_texttable = """
+_texttable_example2 = """
  ___________________________
 |               |   |   |   |
 |               | a | c | b |
@@ -25,14 +25,14 @@ _texttable = """
 """
 
 
-_json = {
+_json_example1 = {
     "name": "name test",
     "desription": "converts json 2 text table format",
     "test3": "test3 test",
     "test4": { "test4a": "test4b"}
 }
 
-_json = {
+_json_example2 = {
   "sampleData": [
     {
       "a1": "aa1",
@@ -49,9 +49,9 @@ _json = {
 
 
 print("\ntext table output: \n")
-print(_texttable)
+print(_texttable_example1)
 
-output = json2texttable.convert(json = _json)
+output = json2texttable.convert(json = _json_example1)
 print("\nhtml output: \n")
 print(output)
 print("\n")
