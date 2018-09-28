@@ -48,10 +48,17 @@ _json_example2 = {
 }
 
 
-print("\ntext table output: \n")
+print("\nexample1: text table output \n")
 print(_texttable_example1)
 
 output = json2texttable.convert(json = _json_example1)
-print("\nhtml output: \n")
+print("\nexample1: html output: \n")
+print(output)
+
+print("\nexample2: text table output: \n")
+print(_texttable_example2)
+
+output = json2texttable.convert(json = _json_example2)
+print("\nexample2: html output: \n")
 print(output)
 print("\n")
