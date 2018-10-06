@@ -67,6 +67,23 @@ Installation
 
 Or, Download [here](https://github.com/softvar/json2html/releases) and run `python setup.py install` after changing directory to `/json2html`
 
+VirtualEnv - You might also want to install this module into a "virtualenv", which can be useful for testing or updating the code
+base, without having to install it into your OSes default python setup.  Do install this module into a virtualenv, run
+this
+
+.. code-block:: bash
+
+    $ mkdir virtualenv/json2html
+    $ python3 -m venv virtualenv/json2html
+    $ source virtualenv/json2html/bin/activate
+    $ pip3 develop json2html
+
+
+Once this is done, you could update to code base, commit your changes and submit a PR to the orginal project Devs, to
+see if they wan to include your updates.
+
+
+
 Example Usage
 -------------
 
